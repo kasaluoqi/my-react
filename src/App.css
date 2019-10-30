@@ -1,0 +1,87 @@
+div.container {
+  padding: 20px;
+}
+
+div.container .navbar > div.container {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.border-container {
+  /* border-bottom: 1px solid #d5d5d5; */
+}
+
+.center-horizontal {
+  margin: auto;
+  text-align: center;
+}
+
+.center-vertical {
+  padding: 70px 0;
+}
+
+.right {
+  float: right;
+  text-align: right;
+}
+
+.left {
+  float: left;
+  text-align: left;
+}
+
+p.education {
+  padding: 10px;
+}
+
+ul.edu-desp {
+  list-style: none outside;
+  padding: 0;
+}
+
+a.dropdown-toggle.nav-link {
+  padding: 0;
+}
+
+div.project-item {
+  background-color: #f9f9ff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+div.project-item:hover {
+  background: #90acd1;
+  cursor: pointer;
+  color: #fff;
+}
+.project-item p {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+}
+
+.top-right > .btn.btn-outline-primary {
+  background: #fff;
+  color: #222222;
+  border: 1px solid #90acd1;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+}
+.top-right > .btn.btn-outline-primary:hover {
+  background: #a5bad6;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+a.iconButton {
+  color: #777777;
+  padding: 0.3rem;
+}
