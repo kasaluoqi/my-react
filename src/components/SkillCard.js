@@ -5,7 +5,7 @@ class SkillCard extends Component {
   state = {};
   render() {
     return (
-      <div className="col-md-12 col-lg-6">
+      <div className="col-sm-12 col-md-6 wow fadeIn">
         <Card
           style={{
             // margin: "10px",
@@ -14,7 +14,7 @@ class SkillCard extends Component {
         >
           <Card.Body>
             <Card.Title>{this.props.content.cardTitle}</Card.Title>
-            <Card.Subtitle className="mb-5 text-muted">
+            <Card.Subtitle className="mb-3 text-muted">
               {this.props.content.cardSubtitle}
             </Card.Subtitle>
             {this.props.skills.map((e, i) => {

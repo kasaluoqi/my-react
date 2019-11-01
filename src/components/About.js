@@ -6,18 +6,23 @@ class About extends Component {
   rederect = dest => {};
   render() {
     return (
-      <div style={{ background: "#f9f9ff" }}>
+      <div style={{ background: "#e9f0f5" }}>
         <div className="container border-container" id={this.props.id}>
-          <div className="row align-items-center justify-content-between">
-            <div className="left-col col-lg-6">
+          <div
+            className="row align-items-center justify-content-between"
+            style={{ minHeight: "100vh", height: "100%" }}
+          >
+            <div className="left-col col-lg-6 wow fadeInLeft">
               <img className="img-fluid" src={me} alt="" />
             </div>
-            <div className="right-col col-lg-5 col-md-12">
-              <h1>About Myself</h1>
-              <p>
-                Master graduate student in Information Technology with a strong
-                focus on web and mobile application development. Actively
-                looking for internships opportunities.
+            <div className="right-col col-lg-5 col-md-12 wow fadeInRight">
+              <h1 style={{ paddingTop: "10px" }}>About Myself</h1>
+              <h3>Hi, I'm Hanfang Zhao.</h3>
+              <p style={{ fontSize: "17px", padding: "10px 0" }}>
+                I'm the master Graduate student in Information Technology from
+                Monash with a strong focus on <strong>full-stack</strong> and{" "}
+                <strong>mobile application development</strong>. Actively
+                looking for a full-time job or internship opportunities.
               </p>
               <a
                 className="iconButton"
@@ -39,7 +44,7 @@ class About extends Component {
 
               <a
                 className="iconButton"
-                href="https://github.com/kasaluoqi?tab=repositories"
+                href="https://raw.githubusercontent.com/kasaluoqi/root/6cd45c440ba7518711c6078aead6d154f04be370/Software%20Engineer_Hanfang%20Zhao.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
               >

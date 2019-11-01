@@ -6,17 +6,19 @@ class Navigation extends Component {
   state = {};
   render() {
     const navItemStyle = {
-      paddingLeft: ".5em",
-      paddingTop: ".5em",
-      paddingBottom: ".5em",
+      paddingLeft: "1em",
+      paddingTop: "1em",
+      paddingBottom: "1em",
       paddingRight: "10px",
       cursor: "pointer"
     };
 
     const headerStyle = {
-      backgroundColor: "#f8f9fa",
-
-      padding: "20px"
+      backgroundColor: "#e9f0f5",
+      fontWeight: "500",
+      fontSize: "18px",
+      padding: "20px",
+      fontFamily: "'Poppins', sans-serif"
     };
 
     const navStyle = {
@@ -24,7 +26,8 @@ class Navigation extends Component {
       left: "0%",
       top: "0%",
       right: "0%",
-      backgroundColor: "#f8f9fa",
+      color: "#000",
+      backgroundColor: "#e9f0f5",
       zIndex: "1024"
     };
 
@@ -45,7 +48,7 @@ class Navigation extends Component {
                     to="aboutPanel"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-40}
                     duration={700}
                     style={navItemStyle}
                   >
@@ -56,7 +59,7 @@ class Navigation extends Component {
                     to="skillPanel"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-70}
                     duration={700}
                     style={navItemStyle}
                   >
@@ -67,7 +70,7 @@ class Navigation extends Component {
                     to="eduPanel"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-70}
                     duration={700}
                     style={navItemStyle}
                   >
@@ -81,14 +84,14 @@ class Navigation extends Component {
                     <div className="dropdown-item">
                       <Link
                         activeClass="active"
-                        to="protfolio1"
+                        to="portfolio1"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={-100}
                         duration={700}
                         style={navItemStyle}
                       >
-                        Project 1
+                        RegionalVIC
                       </Link>
                     </div>
                     <div className="dropdown-item">
@@ -97,15 +100,53 @@ class Navigation extends Component {
                         to="portfolio2"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={-100}
                         duration={700}
                         style={navItemStyle}
                       >
-                        Project 2
+                        HealthMe
+                      </Link>
+                    </div>
+
+                    <div className="dropdown-item">
+                      <Link
+                        activeClass="active"
+                        to="portfolio3"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={700}
+                        style={navItemStyle}
+                      >
+                        SmartER
+                      </Link>
+                    </div>
+
+                    <div className="dropdown-item">
+                      <Link
+                        activeClass="active"
+                        to="portfolio4"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={700}
+                        style={navItemStyle}
+                      >
+                        ParkingSystem
                       </Link>
                     </div>
                   </NavDropdown>
-                  <Nav.Link style={navItemStyle}>Contact</Nav.Link>
+                  <Link
+                    activeClass="active"
+                    to="contactPanel"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={700}
+                    style={navItemStyle}
+                  >
+                    Contact
+                  </Link>
                 </Nav>
               </Navbar.Collapse>
             </div>

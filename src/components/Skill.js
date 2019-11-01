@@ -4,11 +4,11 @@ class Skill extends Component {
   state = {
     mainSection: {
       cardTitle: "Web Dev Skills",
-      CardSubtitle: ""
+      cardSubtitle: "Mainly focus on web application development"
     },
     secoundSection: {
       cardTitle: "Other Dev Skills",
-      CardSubtitle: ""
+      cardSubtitle: "Most related to the mobile development"
     },
     mainSkills: [
       { title: "ASP.Net", num: 85, variant: "success" },
@@ -25,24 +25,36 @@ class Skill extends Component {
   };
   render() {
     return (
-      <div className="container border-container" id={this.props.id}>
+      <div style={{ background: "#fff" }}>
         <div
-          className="row align-items-center align-middle"
+          className="container border-container"
+          id={this.props.id}
           style={{ minHeight: "100vh", height: "100%" }}
         >
-          <div className="skill-top col-lg-12 col-md-12 text-center align-middle">
-            <h1>Skills</h1>
-            <p>Yeah it is me.</p>
+          <div className="row align-items-center align-middle">
+            <div className="skill-top col-lg-12 col-md-12 text-center align-middle">
+              <h1 className="center-horizontal pt-5">Skills</h1>
+              <p style={{ padding: "40px 30px 0 30px", fontSize: "20px" }}>
+                I start my development journey from 2010. For years, I’ve been
+                learning mobile development and web application development.
+                Besides, I'm also exerpienced to work in a team because of the
+                roles I've taken as a team leader several times during these
+                years.
+              </p>
+            </div>
+            <div className="skill-bottom col-lg-12 col-md-12">
+              <div className="row">
+                <SkillCard
+                  content={this.state.mainSection}
+                  skills={this.state.mainSkills}
+                />
+                <SkillCard
+                  content={this.state.secoundSection}
+                  skills={this.state.secondSkills}
+                />
+              </div>
+            </div>
           </div>
-          <div className="skill-bottom col-lg-12 col-md-12"></div>
-          <SkillCard
-            content={this.state.mainSection}
-            skills={this.state.mainSkills}
-          />
-          <SkillCard
-            content={this.state.secoundSection}
-            skills={this.state.secondSkills}
-          />
         </div>
       </div>
     );
